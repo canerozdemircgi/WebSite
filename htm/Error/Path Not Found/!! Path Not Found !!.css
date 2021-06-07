@@ -1,0 +1,17 @@
+.error-code
+{
+	padding: 0 5px;
+
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+	border-radius: 4px;
+
+	animation: error-code-animation 1s ease-in-out infinite;
+}
+
+@keyframes error-code-animation
+{
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}

@@ -1,0 +1,22 @@
+.contact-section
+{
+	display: grid;
+	grid-template-columns: calc(50% - 21px) 2px calc(50% - 21px);
+	grid-column-gap: 20px;
+
+	word-break: break-word;
+}
+
+#contact_section_left
+{
+	display: grid;
+	grid-row-gap: 20px;
+	text-align: right;
+}
+
+#contact_section_right
+{
+	display: grid;
+	grid-row-gap: 20px;
+	text-align: left;
+}

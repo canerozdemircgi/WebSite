@@ -1,0 +1,21 @@
+title-top
+{
+	display: flex;
+	flex-wrap: wrap;
+	white-space: pre;
+}
+
+.title-top-char
+{
+	font: 32px/32px 'Roboto Medium', sans-serif;
+}
+
+.title-top-char-light
+{
+	text-shadow:
+		0 0 2px var(--header-color),
+		0 0 4px var(--header-color),
+		0 0 8px var(--header-color),
+		0 0 16px var(--header-color),
+		0 0 32px var(--header-color);
+}

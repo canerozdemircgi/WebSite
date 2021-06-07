@@ -1,0 +1,9 @@
+.href-text::selection
+{
+	text-shadow: none;
+}
+
+.href-text-none
+{
+	text-shadow: none;
+}

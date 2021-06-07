@@ -1,0 +1,51 @@
+button-path
+{
+	display: none;
+}
+
+.button-path
+{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+
+	background-color: var(--button-color);
+	border-radius: 6px 22px 22px 6px;
+}
+
+.button-path:last-child
+{
+	background-color: var(--button-active-color);
+}
+
+.button-path:hover
+{
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+}
+
+.button-path:last-child:hover
+{
+	background-color: var(--button-active-color);
+	color: var(--foreground-color);
+}
+
+.button-path-image
+{
+	display: flex;
+	margin-left: auto;
+
+	fill: var(--foreground-color);
+	transition: transform 0.5s ease-out;
+}
+
+.button-path:hover > .button-path-image
+{
+	fill: var(--background-color);
+	transform: rotate(90deg);
+}
+
+.button-path:last-child:hover > .button-path-image
+{
+	fill: var(--foreground-color);
+}

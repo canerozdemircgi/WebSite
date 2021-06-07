@@ -1,0 +1,72 @@
+<< Change root Password >>
+sudo passwd root
+
+<< Search Package >>
+apt search xxx
+
+<< Check Package Status >>
+apt policy xxx
+
+<< Install Package >>
+apt install --yes xxx
+
+<< Remove Package With Unneeded Dependent Packages >>
+apt autoremove --purge xxx
+
+<< Update Package Indexes >>
+apt update
+
+<< Update Packages >>
+apt full-upgrade
+
+----------------------------------------------------------------
+
+ip addr
+
+apt install --yes vim
+apt install --yes fish
+apt install --yes htop
+
+vim /etc/ssh/sshd_config
+^^ PermitRootLogin yes
+systemctl restart sshd
+systemctl status sshd
+
+vim /etc/passwd
+^^ /bin/bash >> /bin/fish
+
+apt install --yes nginx
+systemctl status nginx
+vim /etc/nginx/sites-available/default
+^^ location ~\.(pass|pem|ppk)$ { deny all; }
+systemctl restart nginx
+systemctl status nginx
+
+apt install --yes default-jre-headless
+
+apt install --yes postgresql postgresql-client
+systemctl status postgresql
+su - postgres
+vim /etc/postgresql/11/main/pg_hba.conf
+^^ host all all 0.0.0.0/0 scram-sha-256
+^^ md5 >> scram-sha-256
+vim /etc/postgresql/11/main/postgresql.conf
+^^ listen_addresses = '*'
+^^ password_encryption = scram-sha-256
+systemctl restart postgresql
+systemctl status postgresql
+createdb canerozdemircgi
+createuser --interactive --pwprompt
+^^ user user user y
+exit
+systemctl restart postgresql
+systemctl status postgresql
+
+apt install python3-certbot-nginx
+vim /etc/nginx/sites-available/default
+^^ server_name canerozdemir.site www.canerozdemir.site;
+^^ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+^^ location /Java { proxy_pass http://localhost:4567; }
+nginx -t
+systemctl reload nginx
+certbot --nginx -d canerozdemir.site -d www.canerozdemir.site

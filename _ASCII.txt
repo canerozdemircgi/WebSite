@@ -1,0 +1,16 @@
+*.conf_
+*.css
+*.htm
+*.html
+*.java
+*.js
+*.json
+*.pass
+*.pem
+*.ppk
+*.service
+*.sh
+*.sql
+*.svg
+*.txt
+*.xml

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<symbol id="Caret - Top" viewBox="0 0 1024 1024">
+		<path d="m1024 736q0 26-19 45-19 19-45 19h-896q-26 0-45-19-19-19-19-45 0-26 19-45l448-448q19-19 45-19 26 0 45 19l448 448q19 19 19 45z"/>
+	</symbol>
+	<symbol id="Caret - Bottom" viewBox="0 0 1024 1024">
+		<path d="m1024 288q0 26-19 45l-448 448q-19 19-45 19-26 0-45-19l-448-448q-19-19-19-45 0-26 19-45 19-19 45-19h896q26 0 45 19 19 19 19 45z"/>
+	</symbol>
+	<symbol id="Caret - Left" viewBox="0 0 1024 1024">
+		<path d="m800 64v896q0 26-19 45-19 19-45 19-26 0-45-19l-448-448q-19-19-19-45 0-26 19-45l448-448q19-19 45-19 26 0 45 19 19 19 19 45z"/>
+	</symbol>
+	<symbol id="Caret - Right" viewBox="0 0 1024 1024">
+		<path d="m800 512q0 26-19 45l-448 448q-19 19-45 19-26 0-45-19-19-19-19-45v-896q0-26 19-45 19-19 45-19 26 0 45 19l448 448q19 19 19 45z"/>
+	</symbol>
+	<symbol id="Caret - All" viewBox="0 0 1024 1024">
+		<rect width="288" height="288" rx="144" x="368" y="16"/>
+		<rect width="288" height="288" rx="144" x="720" y="368"/>
+		<rect width="288" height="288" rx="144" x="368" y="720"/>
+		<rect width="288" height="288" rx="144" x="16" y="368"/>
+	</symbol>
+</svg>

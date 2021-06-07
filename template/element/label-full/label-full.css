@@ -1,0 +1,16 @@
+label-full
+{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+
+	white-space: pre;
+
+	border: 2px solid var(--border-color);
+	border-radius: 6px;
+}
+
+.label-full-right
+{
+	margin-left: auto;
+}

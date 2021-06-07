@@ -1,0 +1,23 @@
+footer-single
+{
+	font-size: 16px;
+	line-height: 16px;
+
+	padding: 20px;
+	text-align: center;
+
+	border: 2px dotted var(--foreground-color);
+	border-radius: 8px;
+}
+
+footer-single > div
+{
+	word-break: break-word;
+	color: var(--matrix-color);
+}
+
+footer-single > div > span
+{
+	font-size: 16px;
+	line-height: 16px;
+}

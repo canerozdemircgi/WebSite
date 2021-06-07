@@ -1,0 +1,108 @@
+button-menu
+{
+	display: none;
+}
+
+.button-menu
+{
+	position: relative;
+}
+
+.button-menu-0
+{
+	display: flex;
+	align-items: center;
+
+	width: inherit;
+	height: inherit;
+
+	background-color: var(--button-color);
+	border-width: 0;
+	border-radius: 6px 6px 12px 6px;
+}
+
+.button-menu-1
+{
+	display: flex;
+	align-items: center;
+
+	width: calc(100% - 12px);
+	height: inherit;
+	padding: 10px;
+
+	background-color: var(--background-color);
+	border-width: 0;
+	border-radius: 6px 6px 12px 6px;
+}
+
+.button-menu-0:hover,
+.button-menu-1:hover
+{
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+}
+
+.button-menu:focus-within > .button-menu-0,
+.button-menu:focus-within > .button-menu-1
+{
+	background-color: var(--button-focus-color);
+	color: var(--foreground-color);
+}
+
+.button-menu-image
+{
+	margin-top: -8px;
+	margin-left: auto;
+
+	fill: var(--foreground-color);
+	transition: transform 0.5s ease-out;
+}
+
+.button-menu-0:hover > .button-menu-image,
+.button-menu-1:hover > .button-menu-image
+{
+	fill: var(--background-color);
+	transform: translateY(8px);
+}
+
+.button-menu:focus-within > .button-menu-0 > .button-menu-image,
+.button-menu:focus-within > .button-menu-1 > .button-menu-image
+{
+	fill: var(--foreground-color);
+	transform: translateY(8px) rotate(180deg);
+}
+
+.button-menu-0-context,
+.button-menu-1-context
+{
+	position: absolute;
+	z-index: 99;
+
+	display: none;
+	grid-row-gap: 5px;
+
+	width: inherit;
+	padding: 4px;
+
+	background-color: var(--background-color);
+	border: 2px solid var(--border-color);
+	border-radius: 6px;
+}
+
+.button-menu-0-context
+{
+	margin-top: 4px;
+}
+
+.button-menu-1-context
+{
+	top: 0;
+	margin-top: -6px;
+	margin-left: calc(100% - 8px);
+}
+
+.button-menu:focus-within > .button-menu-0-context,
+.button-menu:focus-within > .button-menu-1-context
+{
+	display: grid;
+}
